@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small  */
+
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* mediam */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start header */
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header .container h2 {
+    color: #0976b9;
+    font-size: 30px;
+}
+
+.header .container ul li {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.header .container ul li a {
+    text-decoration: none;
+    color: #0976b9;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.header .container ul li a:hover {
+    background-color: #0976b9;
+    color: white;
+    transition: 0.6s;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+.header .container .btn {
+    padding-top: 30px;
+}
+
+.header .container .btn button {
+    background-color: #0976b9;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.header .container .btn button:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+/* end header */
+
+/* start landing */
+
+.landing {
+    padding-top: 100px;
+}
+
+.landing .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+}
+
+.landing .container .parent h1 {
+    color: gray;
+    font-size: 30px;
+}
+
+.landing .container .parent span {
+    color: #0976b9;
+}
+
+.landing .container .parent p {
+    color: black;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn1 {
+    background-color: #0976b9;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.btn1:hover{
+    transition: 0.6s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: black;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.btn2:hover{
+    transition: 0.6s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.btn3 {
+    margin-top: 30px;
+    background-color: #fec00a;
+    border: none;
+    padding: 10px 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.btn3:hover{
+    transition: 0.6s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.landing .container .parent .task{
+    padding-top: 30px;
+}
+
+.landing .container .parent .task .label{
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.landing .container .parent .task .input{
+    padding-bottom: 10px;
+}
+
+.landing .container .parent .task .input input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #0976b9 2px solid;
+    width: 25%;
+    padding-bottom: 10px;
+
+}
+
+.landing .container .parent .task .input input::placeholder{
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.landing .container .parent .task .button button{
+    border: none;
+    padding: 10px;
+    background-color: #0976b9;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.landing .container .parent img {
+    width: 450px;
+    height: 400px;
+    padding-left: 100px;
+    padding-top: 70px;
+}
+
+
+
+/* end landing */
